@@ -48,7 +48,7 @@ inputEl.addEventListener('input', (e) => {
   // Очистите input так, чтобы в значении
   // оставались только числа
   const numbersCheck  = e.target.value.replace(/[^0-9]/g, '');
-  inputEl.value =   +numbersCheck > 0 ? numbersCheck : 1;
+  inputEl.value =   +numbersCheck > 0 ? numbersCheck : 0;
 
   if(inputEl.value){
     buttonEl.disabled = false
